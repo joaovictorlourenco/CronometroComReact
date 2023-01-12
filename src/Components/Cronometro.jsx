@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Buttons from "./Buttons"
 import Numero from "./Numero"
+import {GeneralCrono} from "../Style/Cronometro"
 
 const Cronometro = () => {
     const [isActive, setIsActive] = useState(false);
@@ -37,7 +38,7 @@ const Cronometro = () => {
   };
   
     return (
-        <div>
+        <GeneralCrono>
             <Numero time={time}/>
             <Buttons 
                 active={isActive}
@@ -46,7 +47,7 @@ const Cronometro = () => {
                 handlePauseResume={handlePauseResume}
                 handleReset={handleReset} 
             />
-        </div>
+        </GeneralCrono>
     );
 }
 

@@ -1,34 +1,34 @@
 import React from 'react'
-import { ResumeButton, ResetButton, General } from '../Style/Buttons'
+import { ResumeButton, ResetButton, DivBtn, StartButtonStyle, DivContainer } from '../Style/Buttons'
 
 export default function Buttons(props) {
 
   const StartButton = (
-    <div className="btn btn-one btn-start" onClick={props.handleStart}>
+    <StartButtonStyle onClick={props.handleStart}>
       Start
-    </div>
+    </StartButtonStyle>
   );
 
   
   const ActiveButtons = (
-    <General>
+    <DivBtn>
       <ResetButton onClick={props.handleReset}>
         Reset
       </ResetButton>
-      <ResetButton onClick={props.handlePauseResume}> 
+      <ResumeButton onClick={props.handlePauseResume}> 
         {props.isPaused ? "Resume" : "Pause"}
-      </ResetButton>
-    </General>
+      </ResumeButton>
+    </DivBtn>
   );
 
 
   return (
     
-    <div>
+    <DivContainer>
 
-      <div>{props.active ? ActiveButtons : StartButton}</div>
+        <div>{props.active ? ActiveButtons : StartButton}</div>
 
-    </div>
+    </DivContainer>
     
   )
 }

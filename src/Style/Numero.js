@@ -1,7 +1,13 @@
 import styled from "styled-components";
 
-export const digits = styled.span`
+export const Digits = styled.span`
 
-        color: white;
+        color: #F2DEBA;
+
+`;
+
+export const LastDigits = styled.span`
+
+        color: #6C00FF;
 
 `;
