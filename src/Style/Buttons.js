@@ -17,6 +17,7 @@ const btn = styled.button`
     width: 100px;
     height: 40px;
     border: none;
+    font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
 
@@ -35,20 +36,20 @@ export const DivContainer = styled(btn)`
 export const ResumeButton = styled(btn)`
 
     background-color: #3C79F5;
-    color: #F2DEBA;
+    color: #EAE3D8;
 
 `;
 
 export const StartButtonStyle = styled(btn)`
 
     background-color: #3C79F5;
-    color: #F2DEBA;
+    color: #EAE3D8;
 
 `;
 
 export const ResetButton = styled(btn)`
 
-    background-color: #2DCDDF;
-    color: #F2DEBA;
+    background-color: #1DA9B9;
+    color: #EAE3D8;
 
 `;

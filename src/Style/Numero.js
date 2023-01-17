@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Digits = styled.span`
 
-        color: #F2DEBA;
+        color: #EAE3D8;
 
 `;
 
